@@ -1,0 +1,24 @@
+/* ==============================================
+    Why Us
+=============================================== */
+.whyUs {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+.whyUs h2 {
+    font-size: 3rem;
+}
+
+.whyUs p {
+    margin-bottom: 3rem;
+}
+
+.whyUs .whyUsBoxes {
+    margin: 1rem 0.8rem;
+}
+
+.whyUs .whyUsBoxes i {
+    color: var(--colorTwo);
+}

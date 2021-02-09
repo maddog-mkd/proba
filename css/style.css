@@ -1,0 +1,135 @@
+/* ==============================================
+    Google Fonts
+=============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ==============================================
+    Root
+=============================================== */
+:root {
+    /* rade colors */
+    /* --colorOne: rgb(32,64,72);
+    --colorTwo: rgb(93,193,170);
+    --colorThree: rgb(223,245,230);
+    --colorTransparent: rgba(32,64,72,0.7); */
+
+    --colorOne: rgb(4,6,34);
+    --colorTwo: rgb(255,174,25);
+    --colorThree: rgb(255, 255, 255);
+    --colorTransparent: rgba(4,6,34,0.7);
+}
+
+/* ==============================================
+    Css Reset
+=============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================================
+    Core
+=============================================== */
+html, body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorThree);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 1rem 1rem 1rem;
+}
+
+h1, h2, h3 {
+    margin: 1rem;
+}
+
+h4, h5, h6 {
+    margin: 0.5rem;
+}
+
+/* ==============================================
+    Utilities
+=============================================== */
+.container {
+    max-width: 2000px;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+.special {
+    color: var(--colorTwo);
+}
+
+.hLead {
+    font-size: 3rem;
+    max-width: 960px;
+}
+
+.pLead {
+    font-size: 1.3rem;
+    max-width: 960px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-light {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+}
+
+.btn-dark {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+}
+
+/* ==============================================
+    Reveals Elements With JavaScript
+=============================================== */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+  
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+

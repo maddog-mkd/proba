@@ -1,0 +1,32 @@
+/* ==============================================
+    Pricing
+=============================================== */
+.pricing {
+    background-color: var(--colorTransparent);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+.pricing h2 {
+    font-size: 3rem;
+}
+
+.pricing i {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.pricing a {
+    width: 30%;
+    margin: 3rem 3rem;
+}
+
+.pricing .table {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.pricing .table1, th, td {
+    border: 1px solid var(--colorThree);
+    padding: 0.5rem;
+}
