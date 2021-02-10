@@ -12,52 +12,46 @@
 
 .about img {
     display: block;
-    margin: auto;
+    margin: 1.5rem auto;
     width: 50%;
 }
 
-.about .whatWeDo {
+/* What We Do ----------------------------------------- */
+.whatWeDo {
     margin-top: 3rem;
 }
 
-.about .whatWeDo .doBox {
+.whatWeDo h2 {
+    font-size: 3rem;
+}
+
+.whatWeDo .doBox {
     padding: 1rem;
 }
 
 /* About Page / Meet The Team ------------------------ */
-#team {
+.team {
     background-color: var(--colorThree);
     color: var(--colorOne);
     padding: 3rem 0;
 }
 
-#team .container h2 {
+.team  h2 {
     font-size: 3rem;
 }
 
-#team .container .teamMembers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#team .container .teamMembers .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#team .container .teamMembers .member img {
+.team .member img {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
     padding: 1rem;
 }
 
-#team .container .teamMembers .member a {
-    width: 80%;
+.team .member p {
+    font-style: oblique;
+}
+
+.team .member a {
     margin-bottom: 2rem;
 }

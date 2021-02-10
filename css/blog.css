@@ -3,6 +3,7 @@
 =============================================== */
 .blogHome {
     padding: 3rem 0;
+    background-color: var(--colorTransparent1);
 }
 
 .blogHome h2 { 
@@ -17,17 +18,30 @@
     margin-bottom: 2rem;
 }
 
-.blogHome .blog .articleBox1,
-.blogHome .blog .articleBox2,
-.blogHome .blog .articleBox3 {
+.blogHome .blog .articleBox {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: flex-end;
     height: 200px;
     background-color: var(--colorTransparent);
     margin-bottom: 1rem;
+}
+
+.blogHome .blog .articleBox1 a, 
+.blogHome .blog .articleBox2 a, 
+.blogHome .blog .articleBox3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blogHome .blog .articleBox1 h3,
+.blogHome .blog .articleBox2 h3,
+.blogHome .blog .articleBox3 h3 {
+    background-color: var(--colorThree);
+    color: var(--colorOne);
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .blogHome .blog .articleBox1:before {
@@ -61,12 +75,4 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-
-.blogHome .blog .articleBox1 h3,
-.blogHome .blog .articleBox2 h3,
-.blogHome .blog .articleBox3 h3 {
-    background-color: var(--colorThree);
-    color: var(--colorOne);
-    padding: 0 1rem;
 }

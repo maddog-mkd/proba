@@ -4,5 +4,50 @@
 .footer {
     background-color: var(--colorOne);
     color: var(--colorThree);
-    padding: 2rem 0; 
+    padding: 1rem 0; 
+}
+
+.footer .footerWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.footer .footerWrap .footerBox {
+    margin: 1rem 0;
+    flex: 1;
+}
+
+.footer .footerWrap .footerBox:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footerWrap .footerBox ul li {
+    margin: 0.5rem 0;
+}
+
+.footer .footerWrap .footerBox ul li a:hover {
+    color: var(--colorTwo);
+    border-bottom: 2px solid var(--colorTwo);
+}
+
+.footer .social ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .social ul li {
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.footer .social ul li i:hover {
+    color: var(--colorTwo);
+}
+
+.footer p {
+    padding: 1rem;
 }

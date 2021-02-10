@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/whyus.css">
     <link rel="stylesheet" href="./css/pricing.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Recognized Design</title>
+    <title>Blog | Recognized Design | Front-End Freelancers</title>
 </head>
 <body>
 <!-- Logo And Navigatio -->
-    <header id="header">
+    <header class="header container">
         <!-- Logo -->
         <a class="logo" href="./index.html">
             <img src="./img/logo-3.png" alt="">
@@ -35,44 +36,70 @@
             <a href="./index.html" class="navList">Home</a>
             <a href="./about.html" class="navList">About</a>
             <a href="./pricing.html" class="navList">Pricing</a>
+            <a href="./portfolio.html" class="navList">Portfolio</a>
             <a href="./contact.html" class="navList">Contact</a>
             <a href="./blog.html" class="navList">Blog</a>
         </nav>
     </header>
 <!-- Showcase -->
-    <section id="showCase-smal">
+    <section class="showCase-smal container">
         <div class="content">
-            <h1 class="hLead">Welcome To Recognized <span class="special">DESIGN</span></h1>
-            <p class="pLead">Freelance Front-End Web Developer!</p>
-            <a href="#" class="btn btn-light">Click Me</a>
+            <h1 class="hLead">Blog | Recognized <span class="special">DESIGN</span></h1>
+            <p class="pLead">Front-End Freelancers!</p>
+            <a href="./contact.html" class="btn btn-light">Contact Us</a>
         </div>  
     </section>
 <!-- Blog -->
-        <section id="blogHome">
-            <div class="container">
-                <h2>Latest <span class="special">Blogs</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus cupiditate ex dolor quam! Doloremque.</p>
-
-                <div class="blog">                   
-                    <article class="articleBox1">
-                        <a href="#"><h3>How To Make A Cake!</h3></a>
-                    </article>
-                    <article class="articleBox2">
-                        <a href="#"><h3>How To Make A Cake!</h3></a>
-                    </article>
-                    <article class="articleBox3">
-                        <a href="#"><h3>How To Make A Cake!</h3></a>
-                    </article>
-                </div>
-            </div>
-        </section>
+    <section class="blogHome container">
+        <h2 class="reveal">Latest <span class="special">Blogs</span></h2>
+        <p class="reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus cupiditate ex dolor quam! Doloremque.</p>
+        <div class="blog">                   
+            <article class="articleBox articleBox1 reveal">
+                <a href="./blog-post-test"><h3>How To Make A Cake!</h3></a>
+            </article>
+            <article class="articleBox articleBox2 reveal">
+                <a href="./blog-post-test"><h3>How To Make A Cake!</h3></a>
+            </article>
+            <article class="articleBox articleBox3 reveal">
+                <a href="./blog-post-test"><h3>How To Make A Cake!</h3></a>
+            </article>
+    </section>
 <!-- Footer -->
-        <footer id="footer">
-            <div class="footer wraper">
-                <p>Recognized Design 2020, All Right Reserved!</p>
+    <footer class="footer container">
+        <div class="footerWrap">
+            <div class="footerBox">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footerBox">
+                <ul>
+                    <li><a href="#">All Topics</a></li>
+                    <li><a href="#">Privacy Settings</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <p>&copy; 2021 Recognized Design. All Right Reserved.<br>
+        Designed By Recognized Design.</p>
+    </footer>
 <!-- JavaScript -->
-        <script src="./js/main.js"></script>      
+    <script src="./js/main.js"></script>
 </body>
 </html>

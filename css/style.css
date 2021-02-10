@@ -17,6 +17,7 @@
     --colorTwo: rgb(255,174,25);
     --colorThree: rgb(255, 255, 255);
     --colorTransparent: rgba(4,6,34,0.7);
+    --colorTransparent1: rgba(4,6,34,0.1);
 }
 
 /* ==============================================
@@ -64,13 +65,16 @@ h4, h5, h6 {
     margin: 0.5rem;
 }
 
+hr {
+    opacity: 0.1;
+}
+
 /* ==============================================
     Utilities
 =============================================== */
 .container {
     max-width: 2000px;
     margin: auto;
-    border: 1px solid lightgray;
 }
 
 .special {
@@ -93,6 +97,7 @@ h4, h5, h6 {
     margin: 1rem 1rem;
     border-radius: 0.5rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -107,6 +112,11 @@ h4, h5, h6 {
 .btn-dark {
     background-color: var(--colorOne);
     color: var(--colorThree);
+}
+
+.btn-special {
+    background-color: var(--colorTransparent1);
+    color: var(--colorOne);
 }
 
 /* ==============================================

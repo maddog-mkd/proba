@@ -2,13 +2,15 @@
     Pricing
 =============================================== */
 .pricing {
-    background-color: var(--colorTransparent);
-    color: var(--colorThree);
+    background-color: var(--colorTransparent1);
+    color: var(--colorOne);
     padding: 3rem 0;
+    font-size: 0.85rem;
 }
 
 .pricing h2 {
     font-size: 3rem;
+    line-height: 1;
 }
 
 .pricing i {
@@ -17,13 +19,14 @@
 }
 
 .pricing a {
-    width: 30%;
-    margin: 3rem 3rem;
+    margin: 3rem 0;
 }
 
+
+/* Pricing Page ------------------------------------- */
 .pricing .table {
     width: 100%;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .pricing .table1, th, td {
