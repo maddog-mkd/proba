@@ -75,7 +75,7 @@
     Sidebar
 =============================================== */
 .post .sideBar {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     background-color: var(--colorTransparent1);
 }
 
@@ -96,6 +96,18 @@
     height: 150px;
     width: 100%;
     margin-bottom: 1rem;
+    max-width: 550px;
+}
+
+.post .sideBar .relatedBlogs1 a,
+.post .sideBar .relatedBlogs2 a,
+.post .sideBar .relatedBlogs3 a,
+.post .sideBar .mostPopular1 a,
+.post .sideBar .mostPopular2 a,
+.post .sideBar .mostPopular3 a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .post .sideBar .relatedBlogs1 h4,
@@ -122,7 +134,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-1.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar.jpg') no-repeat center center/cover;
 }
 
 .post .sideBar .relatedBlogs2:before {
@@ -133,7 +145,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-2.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar.jpg') no-repeat center center/cover;
 }
 
 .post .sideBar .relatedBlogs3:before {
@@ -144,7 +156,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-3.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar.jpg') no-repeat center center/cover;
 }
    
 /* Most Popular ---------------------------------- */
@@ -156,7 +168,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-4.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
 }
 
 .post .sideBar .mostPopular2:before {
@@ -167,7 +179,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-5.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
 }
 
 .post .sideBar .mostPopular3:before {
@@ -178,7 +190,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/img/bg-1.jpg') no-repeat center center/cover;
+    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
 }
 
 /* Sidebar Categories ------------------------------ */

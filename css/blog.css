@@ -14,28 +14,31 @@
     margin-bottom: 2rem;
 }
 
-.blogHome .blog {
-    margin-bottom: 2rem;
-}
-
 .blogHome .blog .articleBox {
     height: 200px;
     margin-bottom: 1rem;
+    max-width: 550px;
 }
 
 .blogHome .blog .articleBox1 a, 
 .blogHome .blog .articleBox2 a, 
-.blogHome .blog .articleBox3 a {
+.blogHome .blog .articleBox3 a,
+.blogHome .blog .articleBox4 a,
+.blogHome .blog .articleBox5 a,
+.blogHome .blog .articleBox6 a,
+.blogHome .blog .articleBox7 a,
+.blogHome .blog .articleBox8 a,
+.blogHome .blog .articleBox9 a,
+.blogHome .blog .articleBox10 a {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    background-color: var(--colorTransparent);
 }
 
 .blogHome .blog .articleBox1:before {
     content: '';
-    background: url('/img/bg-2.jpg') no-repeat center center/cover;
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +49,7 @@
 
 .blogHome .blog .articleBox2:before {
     content: '';
-    background: url('/img/bg-3.jpg') no-repeat center center/cover;
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +60,84 @@
 
 .blogHome .blog .articleBox3:before {
     content: '';
-    background: url('/img/bg-5.jpg') no-repeat center center/cover;
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox4:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox5:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox6:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox7:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox8:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox9:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.blogHome .blog .articleBox10:before {
+    content: '';
+    background: url('/img/post-test.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -68,7 +148,14 @@
 
 .blogHome .blog .articleBox1 a h3,
 .blogHome .blog .articleBox2 a h3,
-.blogHome .blog .articleBox3 a h3 {
+.blogHome .blog .articleBox3 a h3,
+.blogHome .blog .articleBox4 a h3,
+.blogHome .blog .articleBox5 a h3,
+.blogHome .blog .articleBox6 a h3,
+.blogHome .blog .articleBox7 a h3,
+.blogHome .blog .articleBox8 a h3,
+.blogHome .blog .articleBox9 a h3,
+.blogHome .blog .articleBox10 a h3 {
     background-color: var(--colorThree);
     color: var(--colorOne);
     padding: 0 1rem;
@@ -79,8 +166,10 @@
 
 /* Pagination -------------------------------- */
 .pagination {
-    display: inline-block;
     background-color: var(--colorTransparent1);
     width: 100%;
-    padding-bottom: 3rem;
+}
+
+.pagination h4 {
+    display: inline-block;
 }
