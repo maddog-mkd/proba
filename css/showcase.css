@@ -1,6 +1,6 @@
 .showCase {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     background-color: var(--colorTransparent);
     color: var(--colorThree);
 }
