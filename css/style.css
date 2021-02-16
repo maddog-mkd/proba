@@ -2,17 +2,13 @@
     Root
 =============================================== */
 :root {
-    /* rade colors */
-    /* --colorOne: rgb(32,64,72);
-    --colorTwo: rgb(93,193,170);
-    --colorThree: rgb(223,245,230);
-    --colorTransparent: rgba(32,64,72,0.7); */
-
     --colorOne: rgb(4,6,34);
-    --colorTwo: rgb(255,174,25);
-    --colorThree: rgb(255, 255, 255);
     --colorTransparent: rgba(4,6,34,0.7);
     --colorTransparent1: rgba(4,6,34,0.1);
+    --colorTwo: rgb(255,174,25);
+    --colorThree: rgb(255, 255, 255);
+    --colorFour: rgb(43,51,93);
+    --colorFive: rgb(161,176,190);
 }
 
 /* ==============================================
@@ -28,7 +24,7 @@
     Core
 =============================================== */
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     text-align: center;
 }
@@ -54,10 +50,12 @@ p {
 
 h1, h2, h3 {
     margin: 1rem;
+    font-family: 'Castoro', serif;
 }
 
 h4, h5, h6 {
     margin: 0.5rem;
+    font-family: 'Castoro', serif;
 }
 
 hr {
@@ -67,8 +65,12 @@ hr {
 /* ==============================================
     Utilities
 =============================================== */
-.container {
+.wrapper {
     max-width: 2000px;
+    margin: auto;
+}
+.container {
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -76,9 +78,25 @@ hr {
     color: var(--colorTwo);
 }
 
+.special-1 {
+    color: var(--colorThree);
+}
+
+.special-2 {
+    color: var(--colorOne);
+}
+
+.special-3 {
+    color: var(--colorFive);
+}
+
 .hLead {
     font-size: 3rem;
     max-width: 960px;
+}
+
+.hLead-1 {
+    font-size: 3rem;
 }
 
 .pLead {
@@ -112,6 +130,221 @@ hr {
     background-color: var(--colorTransparent1);
     color: var(--colorOne);
 }
+
+/* ==============================================
+    Logo And Navigatio
+=============================================== */
+nav {
+    z-index: 999;
+    /* position: fixed; ORGINAL */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    transition: 0.6s;
+    /* Nema plava pozadina na ORGINAL */
+    background-color: var(--colorOne);
+}
+
+nav.sticky {
+    background: var(--colorOne);
+    /* padding: 15px 100px; */
+}
+
+nav .brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--colorThree);
+    padding: 0.5rem;
+}
+
+nav .brand img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu a {
+    color: var(--colorThree);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+nav .menu a:hover {
+    color: var(--colorTwo);
+    border-bottom: 3px solid var(--colorTwo);
+    transition: 0.15s;
+    transition-property: all;
+}
+
+nav .btn {
+    color: var(--colorThree);
+    cursor: pointer;
+    display: none;
+}
+
+/* Tablet view ----------------------------- */
+@media (max-width: 1024px){
+    nav .btn{
+        display: block;
+    }
+
+    nav .menu {
+        position: fixed;
+        background: var(--colorOne);
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30vw;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        transition: 0.5s;
+        transition-property: right;
+        z-index: 9999;
+    }
+
+    nav .menu.active {
+        right: 0;
+    }
+
+    nav .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 3rem;
+    }
+
+    nav .menu a{
+        display: block;
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* mobile view ----------------------------- */
+@media (max-width: 600px) {
+    nav .brand img {
+        display: none;
+    }
+
+    nav .brand h2 {
+        font-size: 1.5rem;
+    }
+
+    nav .menu {
+        position: fixed;
+        background: var(--colorOne);
+        flex-direction: column;
+        width: 70vw;
+        height: 100vh;
+        top: 0;
+        right: -120%;
+        padding: 5rem 3rem;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    nav .btn {
+        font-size: 0.7rem;
+    }
+}
+      
+/* ==============================================
+    Showcases
+=============================================== */
+/* ---------- Main Showcase ---------- */
+#showCase {
+    position: relative;
+    height: 90vh;
+    background-color: var(--colorTransparent);
+    color: var(--colorThree);
+}
+
+#showCase .content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showCase .content h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+#showCase:before {
+    content: '';
+    background: url('/img/showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ---------- Small Showcase On Pages ---------- */
+#showCase-small {
+    position: relative;
+    height: 50vh;
+    background-color: var(--colorTransparent);
+    color: var(--colorThree);
+}
+
+#showCase-small .content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showCase-small .content h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+#showCase-small:before {
+    content: '';
+    background: url('/img/showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+
 
 /* ==============================================
     Reveals Elements With JavaScript

@@ -1,175 +1,52 @@
 /* ==============================================
     Blog
 =============================================== */
-.blogHome {
+#blog {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
     padding: 3rem 0;
-    background-color: var(--colorTransparent1);
 }
 
-.blogHome h2 { 
-        font-size: 3rem;
+
+#blog .container .blogWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.blogHome p {
-    margin-bottom: 2rem;
-}
-
-.blogHome .blog .articleBox {
-    height: 200px;
-    margin-bottom: 1rem;
-    max-width: 550px;
-}
-
-.blogHome .blog .articleBox1 a, 
-.blogHome .blog .articleBox2 a, 
-.blogHome .blog .articleBox3 a,
-.blogHome .blog .articleBox4 a,
-.blogHome .blog .articleBox5 a,
-.blogHome .blog .articleBox6 a,
-.blogHome .blog .articleBox7 a,
-.blogHome .blog .articleBox8 a,
-.blogHome .blog .articleBox9 a,
-.blogHome .blog .articleBox10 a {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.blogHome .blog .articleBox1:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox2:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox3:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox4:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox5:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox6:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox7:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox8:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox9:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox10:before {
-    content: '';
-    background: url('/img/post-test.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.blogHome .blog .articleBox1 a h3,
-.blogHome .blog .articleBox2 a h3,
-.blogHome .blog .articleBox3 a h3,
-.blogHome .blog .articleBox4 a h3,
-.blogHome .blog .articleBox5 a h3,
-.blogHome .blog .articleBox6 a h3,
-.blogHome .blog .articleBox7 a h3,
-.blogHome .blog .articleBox8 a h3,
-.blogHome .blog .articleBox9 a h3,
-.blogHome .blog .articleBox10 a h3 {
+#blog .container .blogWrap .blogBox {
     background-color: var(--colorThree);
     color: var(--colorOne);
-    padding: 0 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: 1rem;
+    display: block;
 }
 
-/* Pagination -------------------------------- */
+/* ---------- Pagination ---------- */
 .pagination {
-    background-color: var(--colorTransparent1);
     width: 100%;
 }
 
 .pagination h4 {
     display: inline-block;
+}
+
+
+
+
+
+/* ==============================================
+    Blog - Tablet Mode
+=============================================== */
+@media (min-width: 768px) {
+    #blog .container .blogWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #blog .container .blogWrap .blogBox {
+        max-width: 300px;
+    }
+
 }

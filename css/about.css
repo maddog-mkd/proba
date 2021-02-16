@@ -1,80 +1,67 @@
 /* ==============================================
-    About
+    ABOUT PAGE
 =============================================== */
-.about {
-    color: var(--colorOne);
-    padding: 3rem 0;
-}
-
-.about h2 {
-    font-size: 3rem;
-}
-
-.about img {
-    display: block;
-    margin: 1.5rem auto;
-    width: 50%;
-}
-
-/* What We Do ----------------------------------------- */
-.whatWeDo {
-    margin-top: 3rem;
-}
-
-.whatWeDo h2 {
-    font-size: 3rem;
-}
-
-.whatWeDo .doBox {
-    padding: 1rem;
-}
-
-/* Why Us ---------------------------------- */
-.whyUs {
+#about {
     background-color: var(--colorOne);
     color: var(--colorThree);
     padding: 3rem 0;
 }
 
-.whyUs h2 {
-    font-size: 3rem;
-}
-
-.whyUs p {
-    margin-bottom: 3rem;
-}
-
-.whyUs .whyUsBoxes {
-    margin: 1rem 0.8rem;
-}
-
-.whyUs .whyUsBoxes i {
-    color: var(--colorTwo);
-}
-
-/* About Page / Meet The Team ------------------------ */
-.team {
-    background-color: var(--colorThree);
+/* ---------- WHAT WE DO ---------- */
+#whatWeDo {
+    background-color: var(--colorTwo);
     color: var(--colorOne);
     padding: 3rem 0;
 }
 
-.team  h2 {
-    font-size: 3rem;
-}
-
-.team .member img {
-    display: block;
-    margin: auto;
-    width: 70%;
-    border-radius: 50%;
+#whatWeDo .container .whatWeWrap .doBox {
+    margin: 1rem;
     padding: 1rem;
 }
 
-.team .member p {
-    font-style: oblique;
+#whatWeDo .container .whatWeWrap .doBox i {
+    color: var(--colorThree);
 }
 
-.team .member a {
-    margin-bottom: 2rem;
+/* ---------- MEET THE THEAM ---------- */
+#team {
+    background-color: var(--colorFour);
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#team .container .teamWrap .teamMember {
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--colorThree);
+    text-align: left;
+}
+
+#team .container .teamWrap .teamMember img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* ==============================================
+    MEDIA 
+=============================================== */
+@media (min-width: 768px) {
+    /* ---------- WHAT WE DO ---------- */
+    #whatWeDo .container .whatWeWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ---------- MEET THE TEAM ---------- */
+    #team .container .teamWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

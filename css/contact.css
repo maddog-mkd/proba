@@ -1,7 +1,7 @@
 /* ==============================================
-    Contact
+    CONTACT
 =============================================== */
-.contact {
+#contact {
     position: relative;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
     padding: 3rem 0;
 }
 
-.contact:before {
+#contact:before {
     content: ' ';
     background: url('/img/showcase-1.jpg') no-repeat center center/cover;
     position: absolute;
@@ -21,31 +21,31 @@
     height: 100%;
 }
 
-.contact h2 {  
+#contact .container h2 {  
     font-size: 3rem;
     line-height: 1;
     margin-bottom: 2rem;
 }
 
 /* ------------------------------------ */
-.contact .contactWrap .contactInfo {
+#contact .container .contactWrap .contactInfo {
     margin-bottom: 2rem;
 }
 
-.contact .contactWrap .contactInfo div {
+#contact .container .contactWrap .contactInfo div {
     text-align: left;
     padding: 0.5rem;
 }
 
-.contact .contactWrap .contactInfo i {
+#contact .container .contactWrap .contactInfo i {
     padding: 0.5rem;
 }
 
-.contact .contactWrap .contactForm {
+#contact .container .contactWrap .contactForm {
     margin: 0 0.5rem;
 }
 
-.contact .contactWrap .contactForm .formBox {
+#contact .container .contactWrap .contactForm .formBox {
     width: 100%;
     margin-bottom: 1rem;
     background: #000;
@@ -58,7 +58,7 @@
     opacity: 0.9;
 }
 
-.contact .contactWrap .contactForm textarea {
+#contact .container .contactWrap .contactForm textarea {
     width: 100%;
     background: black;
     color: #fff;
@@ -68,4 +68,26 @@
     box-shadow: 0 1px 3px rgb(255, 183, 0);
     margin-bottom: 1rem;
     opacity: 0.9;
+}
+
+/* ==============================================
+    Contact - Tablet Mode
+=============================================== */
+@media (min-width: 768px) {
+    #contact .container .contactWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contact .container p {
+        margin-bottom: 3rem;
+    }
+
+    #contact .container .contactWrap .contactInfo {
+        max-width: 200px;
+    }
+    #contact .container .contactWrap .contactForm {
+        max-width: 450px;
+    }
 }

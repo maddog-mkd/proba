@@ -1,209 +1,149 @@
 /* ==============================================
     Post
 =============================================== */
-.post {
-    padding: 1rem 0;
+#post {
+    
 }
-.post .articleWrap {
-    margin-bottom: 3rem;
+
+.article {
+    color: var(--colorOne);
+    padding: 3rem 0;
 }
-.post .articleWrap .article h1 {
+.article h1 {
     font-size: 2rem;
 }
 
-.post .articleWrap .article .leadP {
+.article .leadP {
     font-weight: bold;
 }
 
-.post .articleWrap .article h2 {
+.article h2 {
     font-size: 1.5rem;
     margin-top: 3rem;
 }
 
-.post .articleWrap .article p {
+.article p {
     text-align: left;
     margin: 0.5rem 0.5rem;
 }
 
-.post .articleWrap .article img {
-    max-width: 500px;
+.article img {
+    max-width: 100%;
     margin: 0.5rem 0;
 }
 
-.post .articleWrap .article ul {
+.article ul {
     text-align: left;
     list-style: square;
-    margin: 1rem 1.5rem;
+    margin: 1rem 3rem;
 }
 
-/* Breadcrumps ------------------------------- */
-.post .articleWrap .article .breadcrumbs {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+/* ---------- BREADCRUMPS ---------- */
+.article .breadcrumbs {
+    border-top: 1px solid var(--colorOne);
+    border-bottom: 1px solid var(--colorOne);
     text-align: left;
     font-size: 0.8rem;
     padding: 0.3rem;
 }
 
-.post .articleWrap .article .breadcrumbs span {
+.article .breadcrumbs span {
     margin-left: 0.1rem;
     padding: 0.3rem;
     background-color: var(--colorOne);
     color: var(--colorThree);
 }
 
-.post .articleWrap .article .breadcrumbs a {
+.article .breadcrumbs a {
     color: var(--colorThree);
 }
 
-.post .articleWrap .article .breadcrumbs a:hover {
+.article .breadcrumbs a:hover {
     color: var(--colorTwo);
 }
 
-/* Credits --------------------------------- */
-.post .articleWrap .article .credits {
-    margin-top: 3rem;
-    list-style: none;
+/* ---------- TAGS ---------- */
+.article .tags {
+    margin-top: 2rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.article .tags span a {
     color: var(--colorOne);
 }
 
-.post .articleWrap .article .credits a {
+/* ---------- CREDITS ---------- */
+.article .credits {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.article .credits a {
     color: var(--colorOne);
+    text-decoration: underline;
 }
 
 /* ==============================================
-    Sidebar
+    SIDEBAR
 =============================================== */
-.post .sideBar {
+.sidebar {
+    background-color: whitesmoke;
     padding: 2rem 0;
-    background-color: var(--colorTransparent1);
 }
 
-.post .sideBar h2 { 
-    padding: 2rem 0 1rem 0;
+.sidebar .sideCat {
+    margin: 0;
+    padding: 1rem;
 }
 
-/* Sidebar Boxes ----------------------------- */
-.post .sideBar .relatedBlogs1,
-.post .sideBar .relatedBlogs2,
-.post .sideBar .relatedBlogs3,
-.post .sideBar .mostPopular1,
-.post .sideBar .mostPopular2,
-.post .sideBar .mostPopular3 {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 150px;
-    width: 100%;
-    margin-bottom: 1rem;
-    max-width: 550px;
-}
-
-.post .sideBar .relatedBlogs1 a,
-.post .sideBar .relatedBlogs2 a,
-.post .sideBar .relatedBlogs3 a,
-.post .sideBar .mostPopular1 a,
-.post .sideBar .mostPopular2 a,
-.post .sideBar .mostPopular3 a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.post .sideBar .relatedBlogs1 h4,
-.post .sideBar .relatedBlogs2 h4,
-.post .sideBar .relatedBlogs3 h4,
-.post .sideBar .mostPopular1 h4,
-.post .sideBar .mostPopular2 h4,
-.post .sideBar .mostPopular3 h4 { 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.sidebar .sideCat li {
     text-align: left;
-    background-color: var(--colorThree);
-    color: var(--colorOne);
-    padding: 0.1rem 0.2rem;
-}
-
-/* Related Post -------------------------------- */
-.post .sideBar .relatedBlogs1:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar.jpg') no-repeat center center/cover;
-}
-
-.post .sideBar .relatedBlogs2:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar.jpg') no-repeat center center/cover;
-}
-
-.post .sideBar .relatedBlogs3:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar.jpg') no-repeat center center/cover;
-}
-   
-/* Most Popular ---------------------------------- */
-.post .sideBar .mostPopular1:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
-}
-
-.post .sideBar .mostPopular2:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
-}
-
-.post .sideBar .mostPopular3:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('/img/sidebar-1.jpg') no-repeat center center/cover;
-}
-
-/* Sidebar Categories ------------------------------ */
-.post .sideBar a {
-    display: block;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-    margin: 0.5rem;
     padding: 0.5rem;
-    color: black;
-    font-weight: bold;
+    border-bottom: 1px solid white;
 }
 
-.post .sideBar a:hover {
-    color: var(--colorTwo);
+.sidebar .sideCat li:hover {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
+    transition: all 1s ease;
+}
+
+.sidebar .sideCat li a {
+    color: var(--colorOne);
+}
+
+.sidebar .sideBlog {
+    display: block;
+    margin: 1rem 0.5rem;
+    background-color: var(--colorFive);
+}
+
+.sidebar h3 {
+    margin-top: 3rem;
+}
+
+
+
+
+
+/* ==============================================
+    POST / TABLET-MODE
+=============================================== */
+@media (min-width: 768px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex .article {
+        flex: 3;
+    }
+
+    .flex .sidebar {
+        flex: 1;
+   
+    }
 }
 

@@ -1,0 +1,222 @@
+/* ==============================================
+    HOME PAGE / INFO
+=============================================== */
+/* ---------- ABOUT ----------- */
+#infoAbout {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+/* ---------- WHAT WE DO ---------- */
+#infoWhat {
+    background-color: #A1B0BE;
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#infoWhat .container .infoWrapBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoWhat .container .infoWrapBox .infoBox {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#infoWhat .container .infoWrapBox .infoBox i {
+    margin-top: 1rem;
+    color: var(--colorTwo);
+}
+
+/* ---------- PROJECT ---------- */
+#infoProject {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoProject .container .infoProjectWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#infoProject .container .infoProjectWrap .infoProjectBox1,
+#infoProject .container .infoProjectWrap .infoProjectBox2 {
+    padding: 1rem;
+    margin: 1rem
+}
+
+#infoProject .container .infoProjectWrap .infoProjectBox1 i {
+    color: var(--colorOne);
+}
+
+/* ---------- WHY US ---------- */
+#infoWhyUs {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoWhyUs .container .infoWhyUsWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox {
+    background-color: var(--colorFour);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+/* ---------- PORTFOLIO ---------- */
+#infoPortfolio {
+    padding: 3rem 0;
+    color: var(--colorOne);
+}
+
+#infoPortfolio .container .infoPortfolioBox1,
+#infoPortfolio .container .infoPortfolioBox2 {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#infoPortfolio .container .infoPortfolioBox1 i {
+    color: var(--colorTwo);
+}
+
+/* ---------- PRICING ---------- */
+#infoPricing {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+#infoTestimonials {
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#infoTestimonials .container p {
+    margin-bottom: 2rem;
+}
+
+#infoTestimonials .container .infoTestiWrap .infoTestiBox {
+    background-color: var(--colorFive);
+    padding: 1rem;
+    margin: 1rem;
+    font-size: small;
+}
+
+#infoTestimonials .container .infoTestiWrap .infoTestiBox img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#infoTestimonials .container .infoTestiWrap .infoTestiBox .clr {
+    clear: both;
+    padding-top: 1rem;
+}
+
+/* ---------- BLOG ---------- */
+#infoBlog {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoBlog .container .infoBlogWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoBlog .container .infoBlogWrap .infoBlogBox {
+    background-color: var(--colorThree);
+    color: var(--colorOne);
+    margin: 1rem;
+}
+
+/* ---------- CONTACT --------- */
+#infoContact {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+
+
+/* ==============================================
+    MEDIA
+=============================================== */
+@media (min-width: 768px) {
+    /* What We Do */
+    #infoWhat .container .infoWrapBox {
+        flex-direction: row;
+    }
+
+    /* Project/contact */
+    #infoProject .container .infoProjectWrap {
+        flex-direction: row-reverse;
+    }
+
+    #infoProject .container .infoProjectWrap .infoProjectBox1 {
+        flex: 1;
+    }
+
+    #infoProject .container .infoProjectWrap .infoProjectBox2 {
+        flex: 2;
+    }
+
+    /* Why Us */
+    #infoWhyUs .container .infoWhyUsWrap {
+        flex-direction: row;
+    }
+
+    /* Portfolio */
+    #infoPortfolio .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #infoPortfolio .container .infoPortfolioBox1 {
+        flex: 1;
+    }
+
+    #infoPortfolio .container .infoPortfolioBox2 {
+        flex: 2;
+    }
+
+    /* Testimonials */
+    #infoTestimonials .container .infoTestiWrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Blog */
+    #infoBlog .container .infoBlogWrap {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+

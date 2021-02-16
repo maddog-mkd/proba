@@ -1,136 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
+    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/1890b6a42e.js" crossorigin="anonymous"></script>
-    <!-- Css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/showcase.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Blog | Recognized Design | Front-End Freelancers</title>
 </head>
 <body>
-<!-- Navigation And Logo -->
-    <nav>
-        <a href="#" class="brand">
-                <img src="./img/logo.png" alt="">
-            <h2>
-                Recognized<span class="special">Design</span>
-            </h2>
-        </a>
-        <div class="menu">
-        <div class="btn">
-            <i class="fas fa-times close-btn"></i>
-        </div>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./pricing.html">Pricing</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./blog.html">Blog</a>
-        </div>
-        <div class="btn">
-        <i class="fas fa-bars menu-btn fa-2x"></i>
-        </div>    
-    </nav>
-<!-- Showcase -->
-    <header class="showCase-smal container">
-        <div class="content">
-            <h1 class="hLead">Blog | Recognized <span class="special">DESIGN</span></h1>
-            <p class="pLead">Front-End Freelancers!</p>
-            <a href="#" class="btn btn-light">Contact Us</a>
-        </div>  
-    </header>
-<!-- Blog -->
-    <section class="blogHome container">
-        <h2 class="reveal">Latest <span class="special">Blogs</span></h2>
-        <p class="reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus cupiditate ex dolor quam! Doloremque.</p>
-        <div class="blog">                   
-            <article class="articleBox articleBox1 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox2 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox3 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox4 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox5 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox6 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox7 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox8 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox9 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-            <article class="articleBox articleBox10 reveal">
-                <a href="./post-test.html"><h3>How To Make A Cake!</h3></a>
-            </article>
-        </div>
-    </section>
-<!-- Pagination -->
-    <section class="pagination container">
-        <h4><a href="#" class="btn btn-light">&laquo; Back</a></h4>
-        <h4><a href="#" class="btn btn-light">Next &raquo;</a></h4>
-    </section>
-<!-- Footer -->
-    <footer class="footer container">
-        <div class="footerWrap">
-            <div class="footerBox">
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <!-- NAVIGATION AND LOGO -->
+        <nav id="navigation">
+            <a href="./index.html" class="brand">
+                    <img src="./img/logo.png" alt="">
+                <h2>
+                    Recognized<span class="special">Design</span>
+                </h2>
+            </a>
+            <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./pricing.html">Pricing</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./blog.html">Blog</a>
+            </div>
+            <div class="btn">
+            <i class="fas fa-bars menu-btn fa-2x"></i>
+            </div>    
+        </nav>
+        <!-- SHOWCASE -->
+        <header id="showCase-small">
+            <div class="content">
+                <h1 class="hLead">Blog | Recognized <span class="special">DESIGN</span></h1>
+                <p class="pLead">Front-End Freelancers!</p>
+                <a href="./contact.html" class="btn btn-light">Contact Us</a>
+            </div>  
+        </header>
+        <!-- BLOGS / ALL CATEGORIES-->
+        <!-- BLOG -->
+        <main id="blog">
+            <div class="container">
+                <h2 class="hLead-1">LATEST <span class="special-2">BLOGS</span></h2>
+                <div class="blogWrap">
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 12</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 11</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 10</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 9</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 8</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 7</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 6</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 5</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 4</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 3</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 2</h3>
+                    </a>
+                    <a href="./post-test.html" class="blogBox">
+                        <img src="./img/sidebar.jpg" alt="">
+                        <h3>Info Blog 1</h3>
+                    </a>
+                </div>
+                <!-- PAGINATION -->
+                <section class="pagination container">
+                    <h4><a href="#" class="btn btn-light">&laquo; Back</a></h4>
+                    <h4><a href="#" class="btn btn-light">Next &raquo;</a></h4>
+                </section>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footerWrap">
+                <div class="footerBox">
+                    <ul>
+                        <li><h4 class="special">PAGES</h4></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footerBox">
+                    <ul>
+                        <li><h4 class="special">CATEGORY</h4></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Crypto</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </div>
+                <div class="footerBox">
+                    <ul>
+                        <li><h4 class="special">POLICY</h4></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">All Topics</a></li>
+                        <li><a href="#">Tags</a></li>
+                    </ul>
+                </div>
+                <div class="footerBox">
+                    <ul>
+                        <li><h4 class="special">CONTACT</h4></li>
+                        <li><i class="fas fa-map-marker-alt"></i>Address, City, Country</li>
+                        <li><i class="fas fa-envelope"></i>contact@gmail.com</li>
+                        <li><i class="fas fa-phone"></i>+00 000 000 000</li>
+                        <li><i class="fas fa-clock"></i>Mon - Fry 08:00 AM to 17:00 Pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
                 </ul>
             </div>
-            <div class="footerBox">
-                <ul>
-                    <li><a href="#">All Topics</a></li>
-                    <li><a href="#">Privacy Settings</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="social">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
-            </ul>
-        </div>
-        <hr>
-        <p>&copy; 2021 Recognized Design. All Right Reserved.<br>
-        Designed By Recognized Design.</p>
-    </footer>
-<!-- JavaScript -->
+            <p>&copy; 2021 Recognized Design. All Right Reserved.<br>
+            Designed By Recognized Design.</p>
+        </footer>
+    </div>
+<!-- JAVASCRIPT -->
     <script src="./js/main.js"></script>
 </body>
 </html>
