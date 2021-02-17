@@ -9,6 +9,8 @@
     padding: 3rem 0;
 }
 
+
+
 /* ========== WHAT WE DO ========== */
 #infoWhat {
     background-color: var(--colorFive);
@@ -38,6 +40,8 @@
     width: 50%;
 }
 
+
+
 /* ========== PROJECT ========== */
 #infoProject {
     background-color: var(--colorTwo);
@@ -65,6 +69,8 @@
     margin-right: auto;
     width: 50%;
 }
+
+
 
 /* ========== WHY US ========== */
 #infoWhyUs {
@@ -94,6 +100,8 @@
     width: 50%;
 }
 
+
+
 /* ========== PORTFOLIO ========== */
 #infoPortfolio {
     padding: 3rem 0;
@@ -113,6 +121,8 @@
     width: 50%;
 }
 
+
+
 /* ========== PRICING ========== */
 #infoPricing {
     background-color: var(--colorFour);
@@ -127,33 +137,59 @@
     width: 50%;
 }
 
+
+
 /* ========== TESTIMONIALS ========== */
-#infoTestimonials {
-    color: var(--colorOne);
+#testimonials {
     padding: 3rem 0;
 }
 
-#infoTestimonials .container p {
-    margin-bottom: 2rem;
+#testimonials .testi {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
-#infoTestimonials .container .infoTestiWrap .infoTestiBox {
-    background-color: var(--colorFive);
-    padding: 1rem;
+#testimonials .testi .testi-box {
+    border-radius: 1rem;
+    box-shadow: -0px 1px 7px 0px lightgray;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+}
+
+#testimonials .testi .testi-box img {
+    width: 30px;
+    height: 30px;
+}
+
+#testimonials .testi .testi-box p {
+    font-style: italic;
     font-size: small;
+    padding-top: 0.5rem;
 }
 
-#infoTestimonials .container .infoTestiWrap .infoTestiBox img {
-    float: left;
-    width: 100px;
-    height: 100px;
+#testimonials .testi-box .testi-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#infoTestimonials .container .infoTestiWrap .infoTestiBox .clr {
-    clear: both;
-    padding-top: 1rem;
+#testimonials .testi-box .testi-1 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 1rem;
 }
+
+#testimonials .testi .testi-box .testi-1 h4 {
+    margin-left: 1rem;
+}
+
+
 
 /* ========== BLOG ========== */
 #infoBlog {
@@ -175,12 +211,16 @@
     margin: 1rem;
 }
 
+
+
 /* ========== CONTACT ========== */
 #infoContact {
     background-color: var(--colorTwo);
     color: var(--colorThree);
     padding: 3rem 0;
 }
+
+
 
 
 
@@ -254,11 +294,23 @@
 
 
 
-    /* ========== Testimonials ========== */
-    #infoTestimonials .container .infoTestiWrap {
-        display: flex;
+    /* ========== TESTIMONIALS ========== */
+    #testimonials .testi {
         flex-direction: row;
     }
+
+    #testimonials .testi .testi-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials .testi-box .testi-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
 
     /* ========== Blog ========== */
     #infoBlog .container .infoBlogWrap {
