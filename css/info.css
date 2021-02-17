@@ -141,6 +141,7 @@
 
 /* ========== TESTIMONIALS ========== */
 #testimonials {
+    color: var(--colorOne);
     padding: 3rem 0;
 }
 
@@ -158,7 +159,6 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    /* padding: 1rem; */
 }
 
 #testimonials .testi .testi-box img {
