@@ -8,8 +8,10 @@
     --colorTwo: rgb(255,174,25);
     --colorThree: rgb(255, 255, 255);
     --colorFour: rgb(43,51,93);
-    --colorFive: rgb(161,176,190);
+    --colorFive:rgb(175,195,255);
 }
+
+
 
 /* ==============================================
     Css Reset
@@ -19,6 +21,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 /* ==============================================
     Core
@@ -50,17 +54,17 @@ p {
 
 h1, h2, h3 {
     margin: 1rem;
-    font-family: 'Castoro', serif;
 }
 
 h4, h5, h6 {
     margin: 0.5rem;
-    font-family: 'Castoro', serif;
 }
 
 hr {
     opacity: 0.1;
 }
+
+
 
 /* ==============================================
     Utilities
@@ -68,9 +72,15 @@ hr {
 .wrapper {
     max-width: 2000px;
     margin: auto;
+    overflow: hidden;
+}
+
+.filler {
+    width: 100%;
+    height: 85px;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -90,18 +100,12 @@ hr {
     color: var(--colorFive);
 }
 
-.hLead {
-    font-size: 3rem;
-    max-width: 960px;
-}
-
 .hLead-1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .pLead {
     font-size: 1.3rem;
-    max-width: 960px;
 }
 
 .btn {
@@ -131,13 +135,17 @@ hr {
     color: var(--colorOne);
 }
 
+
+
+
+
 /* ==============================================
     Logo And Navigatio
 =============================================== */
 nav {
     z-index: 999;
     /* position: fixed; ORGINAL */
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -165,6 +173,7 @@ nav .brand {
     font-size: 1.5rem;
     color: var(--colorThree);
     padding: 0.5rem;
+    margin-left: 1rem;
 }
 
 nav .brand img {
@@ -204,7 +213,11 @@ nav .btn {
     display: none;
 }
 
-/* Tablet view ----------------------------- */
+
+
+/* ========== MEDIA VIEW / MENU ========== */
+
+/* ========== TABLET VIEW ========== */
 @media (max-width: 1024px){
     nav .btn{
         display: block;
@@ -243,7 +256,7 @@ nav .btn {
     }
 }
 
-/* mobile view ----------------------------- */
+/* ========== MOBILE VIEW ========== */
 @media (max-width: 600px) {
     nav .brand img {
         display: none;
@@ -270,77 +283,71 @@ nav .btn {
         font-size: 0.7rem;
     }
 }
+
+
+
+
       
 /* ==============================================
     Showcases
 =============================================== */
-/* ---------- Main Showcase ---------- */
-#showCase {
-    position: relative;
-    height: 90vh;
-    background-color: var(--colorTransparent);
+
+/* ========== MAIN SHOWCASE ========== */
+#showCase .showCaseWrap {
+    padding: 2rem 0;
+}
+
+#showCase .showCaseWrap .showcaseBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#showCase .showCaseWrap .showcaseBox h1 {
+    background-color: var(--colorOne);
     color: var(--colorThree);
+    font-size: 2rem;
 }
 
-#showCase .content {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+
+
+
+
+/* ==============================================
+    MEDIA 
+=============================================== */
+
+/* ========== SHOWCASE TABLET VIEW ========== */
+@media (min-width: 768px) {
+
+    #showCase .showCaseWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    #showCase .showCaseWrap .showcaseBox {
+        flex: 1;
+    }
+
+    #showCase .showCaseWrap .showcaseBox h1 {
+        font-size: 2rem;
+    }
 }
 
-#showCase .content h1 {
-    font-size: 4rem;
-    line-height: 1;
+/* ========== SHOWCASE COM VIEW ========== */
+@media (min-width: 1024px) {
+    #showCase .showCaseWrap .showcaseBox h1 {
+        font-size: 2.8rem;
+    }
 }
 
-#showCase:before {
-    content: '';
-    background: url('/img/showcase.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
-/* ---------- Small Showcase On Pages ---------- */
-#showCase-small {
-    position: relative;
-    height: 50vh;
-    background-color: var(--colorTransparent);
-    color: var(--colorThree);
-}
 
-#showCase-small .content {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#showCase-small .content h1 {
-    font-size: 3rem;
-    line-height: 1;
-}
-
-#showCase-small:before {
-    content: '';
-    background: url('/img/showcase.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
 
 

@@ -1,16 +1,17 @@
 /* ==============================================
     HOME PAGE / INFO
 =============================================== */
-/* ---------- ABOUT ----------- */
+
+/* ========== ABOUT ==========- */
 #infoAbout {
     background-color: var(--colorOne);
     color: var(--colorThree);
     padding: 3rem 0;
 }
 
-/* ---------- WHAT WE DO ---------- */
+/* ========== WHAT WE DO ========== */
 #infoWhat {
-    background-color: #A1B0BE;
+    background-color: var(--colorFive);
     color: var(--colorOne);
     padding: 3rem 0;
 }
@@ -18,7 +19,7 @@
 #infoWhat .container .infoWrapBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -27,14 +28,17 @@
     color: var(--colorThree);
     padding: 2rem;
     margin: 1rem;
+    flex: 1;
 }
 
-#infoWhat .container .infoWrapBox .infoBox i {
-    margin-top: 1rem;
-    color: var(--colorTwo);
+#infoWhat .container .infoWrapBox .infoBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-/* ---------- PROJECT ---------- */
+/* ========== PROJECT ========== */
 #infoProject {
     background-color: var(--colorTwo);
     color: var(--colorThree);
@@ -55,11 +59,14 @@
     margin: 1rem
 }
 
-#infoProject .container .infoProjectWrap .infoProjectBox1 i {
-    color: var(--colorOne);
+#infoProject .container .infoProjectWrap .infoProjectBox1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-/* ---------- WHY US ---------- */
+/* ========== WHY US ========== */
 #infoWhyUs {
     background-color: var(--colorOne);
     color: var(--colorThree);
@@ -69,7 +76,7 @@
 #infoWhyUs .container .infoWhyUsWrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;;
     justify-content: center;
 }
 
@@ -77,9 +84,17 @@
     background-color: var(--colorFour);
     padding: 2rem;
     margin: 1rem;
+    flex: 1;
 }
 
-/* ---------- PORTFOLIO ---------- */
+#infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* ========== PORTFOLIO ========== */
 #infoPortfolio {
     padding: 3rem 0;
     color: var(--colorOne);
@@ -91,18 +106,28 @@
     margin: 1rem;
 }
 
-#infoPortfolio .container .infoPortfolioBox1 i {
-    color: var(--colorTwo);
+#infoPortfolio .container .infoPortfolioBox1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-/* ---------- PRICING ---------- */
+/* ========== PRICING ========== */
 #infoPricing {
     background-color: var(--colorFour);
     color: var(--colorThree);
     padding: 3rem 0;
 }
 
-/* ---------- TESTIMONIALS ---------- */
+#infoPricing .infoPricingWrap .pb-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* ========== TESTIMONIALS ========== */
 #infoTestimonials {
     color: var(--colorOne);
     padding: 3rem 0;
@@ -130,7 +155,7 @@
     padding-top: 1rem;
 }
 
-/* ---------- BLOG ---------- */
+/* ========== BLOG ========== */
 #infoBlog {
     background-color: var(--colorFive);
     color: var(--colorThree);
@@ -150,7 +175,7 @@
     margin: 1rem;
 }
 
-/* ---------- CONTACT --------- */
+/* ========== CONTACT ========== */
 #infoContact {
     background-color: var(--colorTwo);
     color: var(--colorThree);
@@ -163,12 +188,15 @@
     MEDIA
 =============================================== */
 @media (min-width: 768px) {
-    /* What We Do */
+
+    /* ========== What We Do ==========*/
     #infoWhat .container .infoWrapBox {
         flex-direction: row;
     }
 
-    /* Project/contact */
+
+
+    /* ========== Project/contact ==========*/
     #infoProject .container .infoProjectWrap {
         flex-direction: row-reverse;
     }
@@ -181,12 +209,16 @@
         flex: 2;
     }
 
-    /* Why Us */
+
+
+    /* ========== Why Us ========== */
     #infoWhyUs .container .infoWhyUsWrap {
         flex-direction: row;
     }
 
-    /* Portfolio */
+
+
+    /* ========== Portfolio ========== */
     #infoPortfolio .container {
         display: flex;
         flex-direction: row;
@@ -202,13 +234,33 @@
         flex: 2;
     }
 
-    /* Testimonials */
+
+
+    /* ========== Pricing ========== */
+    #infoPricing .infoPricingWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #infoPricing .infoPricingWrap .pb-1 {
+        flex: 1;
+    }
+
+    #infoPricing .infoPricingWrap .pb-2 {
+        flex: 3;
+    }
+
+
+
+    /* ========== Testimonials ========== */
     #infoTestimonials .container .infoTestiWrap {
         display: flex;
         flex-direction: row;
     }
 
-    /* Blog */
+    /* ========== Blog ========== */
     #infoBlog .container .infoBlogWrap {
         flex-direction: row;
     }
