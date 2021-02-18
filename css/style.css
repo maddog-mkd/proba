@@ -241,6 +241,7 @@ nav .btn {
 @media (max-width: 1024px){
     nav .btn{
         display: block;
+        max-width: 100px;
     }
 
     nav .menu {
@@ -266,6 +267,7 @@ nav .btn {
         top: 0;
         left: 0;
         margin: 3rem;
+        width: 20px;
     }
 
     nav .menu a{
@@ -297,6 +299,10 @@ nav .btn {
         padding: 5rem 3rem;
         transition: 0.5s;
         transition-property: right;
+    }
+
+    nav .menu-btn {
+        min-width: 30px;
     }
 
     nav .btn {
@@ -656,9 +662,10 @@ nav .btn {
     padding: 3rem 0;
 }
 
-#portfolio .container i {
-    width: 100%;
-    margin-top: 3rem;
+#portfolio .container img {
+    display: block;
+    margin: auto;
+    width: 150px;
 }
 
 #portfolio .container a {
@@ -932,7 +939,9 @@ nav .btn {
     margin: 0.5rem 0;
 }
 
-#footer .footerWrap .footerBox ul li i {
+#footer .footerWrap .footerBox ul li img {
+    width: 20px;
+    height: 20px;
     margin-right: 0.5rem;
 }
 
@@ -954,12 +963,13 @@ nav .btn {
 }
 
 #footer .social ul li {
-    padding: 0.5rem;
+    padding: 0.3rem;
     margin: 1rem 0;
 }
 
-#footer .social ul li i:hover {
-    color: var(--colorTwo);
+#footer .social ul li img {
+    width: 30px;
+    height: 30px;
 }
 
 #footer p {
