@@ -136,21 +136,15 @@ hr {
 
 
 
-.flex-box-column {
+.flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.flex-box-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-box-item {
+.flex-box {
+    margin: 3rem 1rem;
     flex: 1;
 }
 
@@ -662,16 +656,6 @@ nav .btn {
     padding: 3rem 0;
 }
 
-#portfolio .container img {
-    display: block;
-    margin: auto;
-    width: 150px;
-}
-
-#portfolio .container a {
-    margin: 3rem 0;
-}
-
 
 
 /* ==============================================
@@ -757,13 +741,6 @@ nav .btn {
     padding: 3rem 0;
 }
 
-
-#blog .container .blogWrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 #blog .container .blogWrap .blogBox {
     background-color: var(--colorThree);
@@ -900,13 +877,14 @@ nav .btn {
 
 .sidebar .sideBlog {
     display: block;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0 1rem 1rem;
     background-color: var(--colorFive);
 }
 
 .sidebar h3 {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
+
 
 
 

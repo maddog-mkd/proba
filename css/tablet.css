@@ -27,17 +27,18 @@
     }
 
 
+    /* ==============================================
+        INFO PAGE | TABLET VIEW
+    =============================================== */
 
-    /* ========== INFO PAGE | TABLET VIEW ========== */
-
-    /* ========== What We Do ==========*/
+    /* ========== WHAT WE DO ==========*/
     #infoWhat .container .infoWrapBox {
         flex-direction: row;
     }
 
 
-
-    /* ========== Project/contact ==========*/
+    
+    /* ========== PROJECT ==========*/
     #infoProject .container .infoProjectWrap {
         flex-direction: row-reverse;
     }
@@ -52,14 +53,14 @@
 
 
 
-    /* ========== Why Us ========== */
+    /* ========== WHY US ========== */
     #infoWhyUs .container .infoWhyUsWrap {
         flex-direction: row;
     }
 
 
 
-    /* ========== Portfolio ========== */
+    /* ========== PORTFOLIO ========== */
     #infoPortfolio .container {
         display: flex;
         flex-direction: row;
@@ -77,7 +78,7 @@
 
 
 
-    /* ========== Pricing ========== */
+    /* ========== PRICING ========== */
     #infoPricing .infoPricingWrap {
         display: flex;
         flex-direction: row-reverse;
@@ -113,7 +114,7 @@
 
 
 
-    /* ========== Blog ========== */
+    /* ========== BLOG ========== */
     #infoBlog .container .infoBlogWrap {
         flex-direction: row;
     }
@@ -122,6 +123,9 @@
     /* ---------------------------------------------------------------------------------------------- */
 
 
+     /* ==============================================
+        ABOU PAGE | TABLET
+    =============================================== */
     /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
     #whatWeDo .container .whatWeWrap {
         display: flex;
@@ -144,10 +148,26 @@
 
 
 
-    /* ========== BLOG PAGE | TABLET  ========== */
+    /* ==============================================
+       PORTFOLIO PAGE | TABLET
+    =============================================== */
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+
+    
+    /* ==============================================
+        BLOG PAGE | TABLET
+    =============================================== */
     #blog .container .blogWrap {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -158,26 +178,28 @@
 
 
     /* ==============================================
-    POST PAGE | TABLET-MODE
+        POST PAGE | TABLET-MODE
     =============================================== */
-    .flex {
+    .post-flex {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .flex .article {
+    .post-flex .article {
         flex: 3;
     }
 
-    .flex .sidebar {
+    .post-flex .sidebar {
         flex: 1;
    
     }
 
 
 
-    /* ========== CONTACT ALL | TABLET VIEW ========== */
+    /* ==============================================
+        CONTACT ALL | TABLET VIEW
+    =============================================== */
     #contact .container .contactWrap {
         display: flex;
         flex-direction: row;
@@ -197,7 +219,9 @@
 
 
 
-    /* ========== FOOTER ALL TABLET VIEW ========== */
+    /* ==============================================
+        FOOTER ALL TABLET VIEW
+    =============================================== */
     #footer .footerWrap {
         flex-direction: row;
     }
