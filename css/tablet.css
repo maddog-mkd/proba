@@ -151,12 +151,14 @@
     /* ==============================================
        PORTFOLIO PAGE | TABLET
     =============================================== */
-    .flex {
+    .portfolio-sites-wrap {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-
+    .portfolio-sites-wrap .portfolio-sites {
+        margin: 1rem;
+    }
 
 
     
@@ -172,7 +174,8 @@
     }
 
     #blog .container .blogWrap .blogBox {
-        max-width: 300px;
+        /* max-width: 300px; */
+        flex: 1;
     }
 
 
