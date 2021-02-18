@@ -3,8 +3,7 @@
 =============================================== */
 :root {
     --colorOne: rgb(4,6,34);
-    --colorTransparent: rgba(4,6,34,0.7);
-    --colorTransparent1: rgba(4,6,34,0.1);
+    --colorTransparent: rgba(4,6,34,0.9);
     --colorTwo: rgb(255,174,25);
     --colorThree: rgb(255, 255, 255);
     --colorFour: rgb(43,51,93);
@@ -74,13 +73,14 @@ hr {
     overflow: hidden;
 }
 
-.filler {
-    width: 100%;
-    height: 85px;
-}
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.filler {
+    width: 100%;
+    height: 85px;
 }
 
 .special {
@@ -133,6 +133,27 @@ hr {
     background-color: var(--colorTransparent1);
     color: var(--colorOne);
 }
+
+
+
+.flex-box-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box-item {
+    flex: 1;
+}
+
 
 
 
@@ -286,9 +307,14 @@ nav .btn {
 
 
 
+
+
+
+
+
       
 /* ==============================================
-    Showcases
+    SHOWCASE 
 =============================================== */
 
 /* ========== MAIN SHOWCASE ========== */
@@ -300,7 +326,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
 }
 
 #showCase .showCaseWrap .showcaseBox h1 {
@@ -313,14 +339,258 @@ nav .btn {
 
 
 
+/* ==============================================
+    ABOUT PAGE
+=============================================== */
+#about {
+    background-color: var(--colorTwo);
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+/* ========== ABOU PAGE | WHAT WE DO ========== */
+#whatWeDo {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#whatWeDo .container .whatWeWrap .doBox {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#whatWeDo .container .whatWeWrap .doBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* ========== ABOU PAGE | MEET THE TEAM ========== */
+#team {
+    background-color: var(--colorFive);
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#team .container .teamWrap .teamMember {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+#team .container .teamWrap .teamMember img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+
 
 /* ==============================================
-    MEDIA 
+    PRICING PAGE
 =============================================== */
+#pricing {
+    background-color: var(--colorFive);
+    color: var(--colorOne);
+    padding: 3rem 0;
+    font-size: 0.85rem;
+}
 
-/* ========== SHOWCASE TABLET VIEW ========== */
+/* ========== PRICING PAGE ========== */
+#pricing  .container .table {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+#pricing  .container .table .brb {
+    color: var(--colorThree);
+}
+
+#pricing .container .table1, th, td {
+    border: 1px solid var(--colorThree);
+    padding: 0.5rem;
+}
+
+
+
+
+
+/* ==============================================
+    PORTFOLIO PAGE
+=============================================== */
+#portfolio {
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#portfolio .container i {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+#portfolio .container a {
+    margin: 3rem 0;
+}
+
+
+
+/* ==============================================
+    CONTACT ALL
+=============================================== */
+#contact {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--colorTransparent);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#contact:before {
+    content: ' ';
+    background: url('/showcase-1.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .container h2 {  
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+/* ------------------------------------ */
+#contact .container .contactWrap .contactInfo {
+    margin-bottom: 2rem;
+}
+
+#contact .container .contactWrap .contactInfo div {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#contact .container .contactWrap .contactInfo i {
+    padding: 0.5rem;
+}
+
+#contact .container .contactWrap .contactForm {
+    margin: 0 0.5rem;
+}
+
+#contact .container .contactWrap .contactForm .formBox {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgb(255, 183, 0);
+    opacity: 0.9;
+}
+
+#contact .container .contactWrap .contactForm textarea {
+    width: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgb(255, 183, 0);
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+
+
+/* ==============================================
+    FOOTER ALL
+=============================================== */
+#footer {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+}
+
+#footer .footerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#footer .footerWrap .footerBox {
+    padding: 2rem;
+    flex: 1;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.01);
+}
+
+#footer .footerWrap .footerBox:last-child {
+    border-bottom: none;
+}
+
+#footer .footerWrap .footerBox ul li {
+    margin: 0.5rem 0;
+}
+
+#footer .footerWrap .footerBox ul li i {
+    margin-right: 0.5rem;
+}
+
+#footer .footerWrap .footerBox ul li a:hover {
+    color: var(--colorTwo);
+    border-bottom: 2px solid var(--colorTwo);
+}
+
+#footer .social {
+    border-top: 5px solid rgba(255, 255, 255, 0.01);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.01);
+}
+
+#footer .social ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .social ul li {
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+#footer .social ul li i:hover {
+    color: var(--colorTwo);
+}
+
+#footer p {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==============================================
+    MEDIA TABLET VIEW
+=============================================== */
 @media (min-width: 768px) {
 
+    /* ========== SHOWCASE TABLET VIEW ========== */
     #showCase .showCaseWrap {
         display: flex;
         flex-direction: row-reverse;
@@ -328,7 +598,6 @@ nav .btn {
         justify-content: center;
     }
 
-    
     #showCase .showCaseWrap .showcaseBox {
         flex: 1;
     }
@@ -336,9 +605,84 @@ nav .btn {
     #showCase .showCaseWrap .showcaseBox h1 {
         font-size: 2rem;
     }
+
+    #showCase .showCaseWrap .showcaseBox img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+
+
+    /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
+    #whatWeDo .container .whatWeWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    #whatWeDo .container .whatWeWrap .doBox {
+        flex: 1;
+    }
+
+    /* ========== ABOU PAGE | TABLET | MEET THE TEAM ========== */
+    #team .container .teamWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+
+
+    /* ========== CONTACT ALL | TABLET VIEW ========== */
+    #contact .container .contactWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contact .container p {
+        margin-bottom: 3rem;
+    }
+
+    #contact .container .contactWrap .contactInfo {
+        max-width: 200px;
+    }
+    #contact .container .contactWrap .contactForm {
+        max-width: 450px;
+    }
+
+
+
+    /* ========== FOOTER ALL TABLET VIEW ========== */
+    #footer .footerWrap {
+        flex-direction: row;
+    }
+    
+    #footer .footerWrap .footerBox {
+        border-right: 5px solid rgba(255, 255, 255, 0.01);
+    }
+    
+    #footer .footerWrap .footerBox {
+        border-bottom: none;
+    }
 }
 
-/* ========== SHOWCASE COM VIEW ========== */
+
+
+
+
+
+
+
+/* ==============================================
+    MEDIA DESCTOP VIEW
+=============================================== */
+
+/* ========== SHOWCASE DESCTOP VIEW ========== */
 @media (min-width: 1024px) {
     #showCase .showCaseWrap .showcaseBox h1 {
         font-size: 2.8rem;
