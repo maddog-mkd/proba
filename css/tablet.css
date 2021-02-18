@@ -1,0 +1,212 @@
+/* ==============================================
+    TABLET VIEW
+=============================================== */
+@media (min-width: 768px) {
+
+    /* ========== SHOWCASE TABLET VIEW ========== */
+    #showCase .showCaseWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #showCase .showCaseWrap .showcaseBox {
+        flex: 1;
+    }
+
+    #showCase .showCaseWrap .showcaseBox h1 {
+        font-size: 2rem;
+    }
+
+    #showCase .showCaseWrap .showcaseBox img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+
+
+    /* ========== INFO PAGE | TABLET VIEW ========== */
+
+    /* ========== What We Do ==========*/
+    #infoWhat .container .infoWrapBox {
+        flex-direction: row;
+    }
+
+
+
+    /* ========== Project/contact ==========*/
+    #infoProject .container .infoProjectWrap {
+        flex-direction: row-reverse;
+    }
+
+    #infoProject .container .infoProjectWrap .infoProjectBox1 {
+        flex: 1;
+    }
+
+    #infoProject .container .infoProjectWrap .infoProjectBox2 {
+        flex: 2;
+    }
+
+
+
+    /* ========== Why Us ========== */
+    #infoWhyUs .container .infoWhyUsWrap {
+        flex-direction: row;
+    }
+
+
+
+    /* ========== Portfolio ========== */
+    #infoPortfolio .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #infoPortfolio .container .infoPortfolioBox1 {
+        flex: 1;
+    }
+
+    #infoPortfolio .container .infoPortfolioBox2 {
+        flex: 2;
+    }
+
+
+
+    /* ========== Pricing ========== */
+    #infoPricing .infoPricingWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #infoPricing .infoPricingWrap .pb-1 {
+        flex: 1;
+    }
+
+    #infoPricing .infoPricingWrap .pb-2 {
+        flex: 3;
+    }
+
+
+
+    /* ========== TESTIMONIALS ========== */
+    #testimonials .testi {
+        flex-direction: row;
+    }
+
+    #testimonials .testi .testi-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials .testi-box .testi-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    /* ========== Blog ========== */
+    #infoBlog .container .infoBlogWrap {
+        flex-direction: row;
+    }
+
+
+    /* ---------------------------------------------------------------------------------------------- */
+
+
+    /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
+    #whatWeDo .container .whatWeWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    #whatWeDo .container .whatWeWrap .doBox {
+        flex: 1;
+    }
+
+    /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */
+    #team .container .teamWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+
+
+    /* ========== BLOG PAGE | TABLET  ========== */
+    #blog .container .blogWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #blog .container .blogWrap .blogBox {
+        max-width: 300px;
+    }
+
+
+
+    /* ==============================================
+    POST PAGE | TABLET-MODE
+    =============================================== */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex .article {
+        flex: 3;
+    }
+
+    .flex .sidebar {
+        flex: 1;
+   
+    }
+
+
+
+    /* ========== CONTACT ALL | TABLET VIEW ========== */
+    #contact .container .contactWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contact .container p {
+        margin-bottom: 3rem;
+    }
+
+    #contact .container .contactWrap .contactInfo {
+        max-width: 200px;
+    }
+    #contact .container .contactWrap .contactForm {
+        max-width: 450px;
+    }
+
+
+
+    /* ========== FOOTER ALL TABLET VIEW ========== */
+    #footer .footerWrap {
+        flex-direction: row;
+    }
+    
+    #footer .footerWrap .footerBox {
+        border-right: 5px solid rgba(255, 255, 255, 0.01);
+    }
+    
+    #footer .footerWrap .footerBox {
+        border-bottom: none;
+    }
+}

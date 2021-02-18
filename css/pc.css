@@ -1,0 +1,10 @@
+/* ==============================================
+    MEDIA DESCTOP VIEW
+=============================================== */
+
+/* ========== SHOWCASE DESCTOP VIEW ========== */
+@media (min-width: 1024px) {
+    #showCase .showCaseWrap .showcaseBox h1 {
+        font-size: 2.8rem;
+    }
+}

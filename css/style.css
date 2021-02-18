@@ -312,6 +312,7 @@ nav .btn {
 
 
 
+
       
 /* ==============================================
     SHOWCASE 
@@ -334,6 +335,233 @@ nav .btn {
     color: var(--colorThree);
     font-size: 2rem;
 }
+
+
+
+
+
+/* ==============================================
+    HOME PAGE / INFO
+=============================================== */
+
+/* ========== ABOUT ==========- */
+#infoAbout {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+
+
+/* ========== WHAT WE DO ========== */
+#infoWhat {
+    background-color: var(--colorFive);
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#infoWhat .container .infoWrapBox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#infoWhat .container .infoWrapBox .infoBox {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+    padding: 2rem;
+    margin: 1rem;
+    flex: 1;
+}
+
+#infoWhat .container .infoWrapBox .infoBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/* ========== PROJECT ========== */
+#infoProject {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoProject .container .infoProjectWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#infoProject .container .infoProjectWrap .infoProjectBox1,
+#infoProject .container .infoProjectWrap .infoProjectBox2 {
+    padding: 1rem;
+    margin: 1rem
+}
+
+#infoProject .container .infoProjectWrap .infoProjectBox1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/* ========== WHY US ========== */
+#infoWhyUs {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoWhyUs .container .infoWhyUsWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;;
+    justify-content: center;
+}
+
+#infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox {
+    background-color: var(--colorFour);
+    padding: 2rem;
+    margin: 1rem;
+    flex: 1;
+}
+
+#infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/* ========== PORTFOLIO ========== */
+#infoPortfolio {
+    padding: 3rem 0;
+    color: var(--colorOne);
+}
+
+#infoPortfolio .container .infoPortfolioBox1,
+#infoPortfolio .container .infoPortfolioBox2 {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#infoPortfolio .container .infoPortfolioBox1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/* ========== PRICING ========== */
+#infoPricing {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoPricing .infoPricingWrap .pb-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/* ========== TESTIMONIALS ========== */
+#testimonials {
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+#testimonials .testi {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#testimonials .testi .testi-box {
+    border-radius: 1rem;
+    box-shadow: -0px 1px 7px 0px lightgray;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials .testi .testi-box img {
+    width: 30px;
+    height: 30px;
+}
+
+#testimonials .testi .testi-box p {
+    font-style: italic;
+    font-size: small;
+    padding-top: 0.5rem;
+}
+
+#testimonials .testi-box .testi-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#testimonials .testi-box .testi-1 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#testimonials .testi .testi-box .testi-1 h4 {
+    margin-left: 1rem;
+}
+
+
+
+/* ========== BLOG ========== */
+#infoBlog {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+#infoBlog .container .infoBlogWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoBlog .container .infoBlogWrap .infoBlogBox {
+    background-color: var(--colorThree);
+    color: var(--colorOne);
+    margin: 1rem;
+}
+
+
+
+/* ========== CONTACT ========== */
+#infoContact {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
 
 
 
@@ -514,6 +742,168 @@ nav .btn {
 
 
 /* ==============================================
+    BLOG PAGE
+=============================================== */
+#blog {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
+    padding: 3rem 0;
+}
+
+
+#blog .container .blogWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog .container .blogWrap .blogBox {
+    background-color: var(--colorThree);
+    color: var(--colorOne);
+    margin: 1rem;
+    display: block;
+}
+
+/* ========== PAGINATION ========== */
+.pagination {
+    width: 100%;
+}
+
+.pagination h4 {
+    display: inline-block;
+}
+
+
+
+/* ==============================================
+    POST PAGE
+=============================================== */
+/* #post {
+    
+} */
+
+.article {
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+.article h1 {
+    font-size: 2rem;
+}
+
+.article .leadP {
+    font-weight: bold;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.article p {
+    text-align: left;
+    margin: 0.5rem 0.5rem;
+}
+
+.article img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.article ul {
+    text-align: left;
+    list-style: square;
+    margin: 1rem 3rem;
+}
+
+/* ========== BREADCRUMPS ========== */
+.article .breadcrumbs {
+    border-top: 1px solid var(--colorOne);
+    border-bottom: 1px solid var(--colorOne);
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+}
+
+.article .breadcrumbs span {
+    margin-left: 0.1rem;
+    padding: 0.3rem;
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+}
+
+.article .breadcrumbs a {
+    color: var(--colorThree);
+}
+
+.article .breadcrumbs a:hover {
+    color: var(--colorTwo);
+}
+
+/* ========== TAGS ========== */
+.article .tags {
+    margin-top: 2rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.article .tags span a {
+    color: var(--colorOne);
+}
+
+/* ========== CREDITS ========== */
+.article .credits {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.article .credits a {
+    color: var(--colorOne);
+    text-decoration: underline;
+}
+
+/* ==============================================
+    SIDEBAR POST
+=============================================== */
+.sidebar {
+    background-color: whitesmoke;
+    padding: 2rem 0;
+}
+
+.sidebar .sideCat {
+    margin: 0;
+    padding: 1rem;
+}
+
+.sidebar .sideCat li {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+
+.sidebar .sideCat li:hover {
+    background-color: var(--colorFive);
+    color: var(--colorThree);
+    transition: all 1s ease;
+}
+
+.sidebar .sideCat li a {
+    color: var(--colorOne);
+}
+
+.sidebar .sideBlog {
+    display: block;
+    margin: 1rem 0.5rem;
+    background-color: var(--colorFive);
+}
+
+.sidebar h3 {
+    margin-top: 3rem;
+}
+
+
+
+/* ==============================================
     FOOTER ALL
 =============================================== */
 #footer {
@@ -577,117 +967,6 @@ nav .btn {
 }
 
 
-
-
-
-
-
-
-
-
-/* ==============================================
-    MEDIA TABLET VIEW
-=============================================== */
-@media (min-width: 768px) {
-
-    /* ========== SHOWCASE TABLET VIEW ========== */
-    #showCase .showCaseWrap {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #showCase .showCaseWrap .showcaseBox {
-        flex: 1;
-    }
-
-    #showCase .showCaseWrap .showcaseBox h1 {
-        font-size: 2rem;
-    }
-
-    #showCase .showCaseWrap .showcaseBox img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-
-
-
-    /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
-    #whatWeDo .container .whatWeWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    #whatWeDo .container .whatWeWrap .doBox {
-        flex: 1;
-    }
-
-    /* ========== ABOU PAGE | TABLET | MEET THE TEAM ========== */
-    #team .container .teamWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-
-
-    /* ========== CONTACT ALL | TABLET VIEW ========== */
-    #contact .container .contactWrap {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    #contact .container p {
-        margin-bottom: 3rem;
-    }
-
-    #contact .container .contactWrap .contactInfo {
-        max-width: 200px;
-    }
-    #contact .container .contactWrap .contactForm {
-        max-width: 450px;
-    }
-
-
-
-    /* ========== FOOTER ALL TABLET VIEW ========== */
-    #footer .footerWrap {
-        flex-direction: row;
-    }
-    
-    #footer .footerWrap .footerBox {
-        border-right: 5px solid rgba(255, 255, 255, 0.01);
-    }
-    
-    #footer .footerWrap .footerBox {
-        border-bottom: none;
-    }
-}
-
-
-
-
-
-
-
-
-/* ==============================================
-    MEDIA DESCTOP VIEW
-=============================================== */
-
-/* ========== SHOWCASE DESCTOP VIEW ========== */
-@media (min-width: 1024px) {
-    #showCase .showCaseWrap .showcaseBox h1 {
-        font-size: 2.8rem;
-    }
-}
 
 
 
