@@ -136,7 +136,7 @@ hr {
 
 
 
-/* .flex {
+.flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +146,7 @@ hr {
 .flex-box {
     margin: 3rem 1rem;
     flex: 1;
-} */
+}
 
 
 
@@ -472,7 +472,13 @@ nav .btn {
     padding: 3rem 0;
 }
 
-#infoPricing .infoPricingWrap .pb-1 {
+#infoPricing .infoPricingWrap .pb-,
+#infoPricing .infoPricingWrap .pb-2 {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#infoPricing .infoPricingWrap .pb-1 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -597,22 +603,36 @@ nav .btn {
 
 /* ========== ABOU PAGE | MEET THE TEAM ========== */
 #team {
-    background-color: var(--colorFive);
+    background-color: var(--colorThree);
     color: var(--colorOne);
     padding: 3rem 0;
 }
 
 #team .container .teamWrap .teamMember {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
     margin: 1rem;
-    padding: 1rem;
     text-align: left;
+    width: 350px;
+    padding-bottom: 2rem;
+}
+
+#team .container .teamWrap .teamMember ul {
+    list-style: square;
+    margin-left: 3rem;
+}
+
+#team .container .teamWrap .teamMember ul li {
+    padding: 0.2rem;
 }
 
 #team .container .teamWrap .teamMember img {
     display: block;
     margin: auto;
-    width: 50%;
-    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 300px;
+
 }
 
 
@@ -636,6 +656,7 @@ nav .btn {
 }
 
 #pricing  .container .table .brb {
+    background-color: var(--colorOne);
     color: var(--colorThree);
 }
 
@@ -775,7 +796,7 @@ nav .btn {
 
 #contact:before {
     content: ' ';
-    background: url('/showcase-1.png') no-repeat center center/cover;
+    background: url('/img/contact-background-1.png') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -790,7 +811,7 @@ nav .btn {
     margin-bottom: 2rem;
 }
 
-/* ------------------------------------ */
+/* --- CONTACT INFO --- */
 #contact .container .contactWrap .contactInfo {
     margin-bottom: 2rem;
 }
@@ -800,10 +821,27 @@ nav .btn {
     padding: 0.5rem;
 }
 
-#contact .container .contactWrap .contactInfo i {
-    padding: 0.5rem;
+#contact .container .contactWrap .contactInfo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
 }
 
+#contact .container .contactWrap .contactInfo .social {
+    margin-top: 1rem;
+}
+
+#contact .container .contactWrap .contactInfo .social ul {
+    display: flex;
+    margin-left: 1rem;
+}
+
+#contact .container .contactWrap .contactInfo .social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* --- CONTACT FORM --- */
 #contact .container .contactWrap .contactForm {
     margin: 0 0.5rem;
 }
@@ -843,6 +881,51 @@ nav .btn {
     color: var(--colorThree);
     padding: 3rem 0;
 }
+
+/* ========== DROPDOWN ========== */
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    padding: 1rem 2rem;
+    border: none;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: var(--colorTransparent);}
+
+
 
 
 #blog .container .blogWrap .blogBox {

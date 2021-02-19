@@ -91,7 +91,7 @@
     }
 
     #infoPricing .infoPricingWrap .pb-2 {
-        flex: 3;
+        flex: 2;
     }
 
 
@@ -174,8 +174,7 @@
     }
 
     #blog .container .blogWrap .blogBox {
-        /* max-width: 300px; */
-        flex: 1;
+        max-width: 300px;
     }
 
 
@@ -206,7 +205,6 @@
     #contact .container .contactWrap {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
     }
 
     #contact .container p {
@@ -214,10 +212,10 @@
     }
 
     #contact .container .contactWrap .contactInfo {
-        max-width: 200px;
+        flex: 1;
     }
     #contact .container .contactWrap .contactForm {
-        max-width: 450px;
+        flex: 1;
     }
 
 
