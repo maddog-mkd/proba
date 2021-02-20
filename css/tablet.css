@@ -19,12 +19,7 @@
         font-size: 2rem;
     }
 
-    #showCase .showCaseWrap .showcaseBox img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
+    
 
 
     /* ==============================================
@@ -116,7 +111,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75px;
     }
 
     /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */
