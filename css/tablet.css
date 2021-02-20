@@ -30,13 +30,6 @@
     /* ==============================================
         INFO PAGE | TABLET VIEW
     =============================================== */
-
-    /* ========== WHAT WE DO ==========*/
-    #infoWhat .container .infoWrapBox .infoBox img {
-        width: 20%;
-    }
-
-
     
     /* ========== PROJECT ==========*/
     #infoProject .container .infoProjectWrap {
@@ -50,15 +43,6 @@
     #infoProject .container .infoProjectWrap .infoProjectBox2 {
         flex: 2;
     }
-
-
-
-    /* ========== WHY US ========== */
-    #infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox img {
-        width: 20%;
-    }
-    
-
 
 
     /* ========== PORTFOLIO ========== */
@@ -132,7 +116,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
+        width: 75px;
     }
 
     /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */

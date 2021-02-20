@@ -379,7 +379,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75px;
 }
 
 
@@ -409,7 +409,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 150px;
 }
 
 
@@ -439,7 +439,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75px;
 }
 
 
@@ -460,7 +460,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 150px;
 }
 
 
@@ -486,7 +486,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 150px;
 }
 
 
@@ -602,7 +602,7 @@ nav .btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 75px;
 }
 
 /* ========== ABOU PAGE | MEET THE TEAM ========== */
@@ -734,7 +734,6 @@ nav .btn {
     background-color: #0fbcf9;
     color: var(--colorThree);
   }
-
 
 
 
