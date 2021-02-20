@@ -3,8 +3,60 @@
 =============================================== */
 
 /* ========== SHOWCASE DESCTOP VIEW ========== */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     #showCase .showCaseWrap .showcaseBox h1 {
         font-size: 2.8rem;
     }
+
+
+    /* ========== INFO PAGE | TABLET VIEW ==========*/
+
+    /* ========== WHAT WE DO ==========*/
+    #infoWhat .container .infoWrapBox {
+        flex-direction: row;
+    }
+
+     /* ========== WHY US ========== */
+     #infoWhyUs .container .infoWhyUsWrap {
+        flex-direction: row;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* ========== ABOU PAGE | DESCTOP | WHAT WE DO ========== */
+    #whatWeDo .container .whatWeWrap {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    #whatWeDo .container .whatWeWrap .doBox {
+        flex: 1;
+    }
+
+    #team .container .teamWrap .teamMember img {
+        height: 300px;
+    }
+
+
+
+
+
+
+    /* ========== PRICING PAGE | DESCTOP | WHAT WE DO ========== */
+    .pricing-card{
+        width: 280px;
+    }
+    
+
 }

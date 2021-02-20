@@ -1,7 +1,7 @@
 /* ==============================================
     TABLET VIEW
 =============================================== */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* ========== SHOWCASE TABLET VIEW ========== */
     #showCase .showCaseWrap {
@@ -32,8 +32,8 @@
     =============================================== */
 
     /* ========== WHAT WE DO ==========*/
-    #infoWhat .container .infoWrapBox {
-        flex-direction: row;
+    #infoWhat .container .infoWrapBox .infoBox img {
+        width: 20%;
     }
 
 
@@ -54,9 +54,10 @@
 
 
     /* ========== WHY US ========== */
-    #infoWhyUs .container .infoWhyUsWrap {
-        flex-direction: row;
+    #infoWhyUs .container .infoWhyUsWrap .infoWhyUsBox img {
+        width: 20%;
     }
+    
 
 
 
@@ -124,18 +125,14 @@
 
 
      /* ==============================================
-        ABOU PAGE | TABLET
+        ABOUT PAGE | TABLET
     =============================================== */
     /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
-    #whatWeDo .container .whatWeWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    #whatWeDo .container .whatWeWrap .doBox {
-        flex: 1;
+    #whatWeDo .container .whatWeWrap .doBox img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
     }
 
     /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */
@@ -146,6 +143,30 @@
         justify-content: center;
     }
 
+    #team .container .teamWrap .teamMember {
+        margin: 0 1rem;
+        flex: 1;
+    }
+
+    #team .container .teamWrap .teamMember img {
+        height: 220px;
+    }
+
+
+ /* ==============================================
+       PRICING | TABLET
+    =============================================== */
+    .pricing-table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .pricing-card{
+        width: 400px;
+    }
 
 
     /* ==============================================
@@ -190,6 +211,7 @@
 
     .post-flex .article {
         flex: 3;
+        margin-left: 0.5rem;
     }
 
     .post-flex .sidebar {
