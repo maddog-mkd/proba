@@ -62,7 +62,10 @@ hr {
     opacity: 0.1;
 }
 
-
+::selection {
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+}
 
 /* ==============================================
     Utilities
@@ -133,6 +136,9 @@ hr {
     background-color: var(--colorTransparent1);
     color: var(--colorOne);
 }
+
+ 
+
 
 
 
@@ -673,14 +679,15 @@ nav .btn {
     transition: .3s linear;
     margin: 3rem auto;
     position: relative;
-    height: 630px;
+    height: 560px;
   }
   
   .pricing-card-header{
     background-color: #0fbcf9;
     display: inline-block;
     color: var(--colorThree);
-    padding: 12px 30px;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.9rem;
     border-radius: 0 0 20px 20px;
     text-transform: uppercase;
     font-weight: 600;
@@ -688,7 +695,7 @@ nav .btn {
   }
   
   .pricing-card:hover .pricing-card-header {
-    box-shadow: 0 0 0 23em #0fbcf9;
+    box-shadow: 0 0 0 29.5em #0fbcf9;
   }
 
   .pricing-card-header:hover {
@@ -696,9 +703,9 @@ nav .btn {
   }
   
   .price{
-    font-size: 70px;
+    font-size: 3rem;
     color: #0fbcf9;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
     transition: .2s linear;
   }
   
@@ -714,6 +721,7 @@ nav .btn {
   
   .pricing-card li{
     padding: 0.2rem 0;
+    font-size: 0.9rem;
     text-transform: uppercase;
   }
   
@@ -730,7 +738,7 @@ nav .btn {
     margin-top: 80px;
     border: 2px solid #0fbcf9;
     color: #0fbcf9;
-    padding: 18px 40px;
+    padding: 1rem 2rem;
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 500;
@@ -741,6 +749,30 @@ nav .btn {
     background-color: #0fbcf9;
     color: var(--colorThree);
   }
+
+  /* ========== PRICING | DESCRIPTION ========== */
+#basic,
+#professional, 
+#premium,
+#ultimate {
+    color: var(--colorOne);
+    padding: 3rem 0;
+}
+
+.description-flex {
+    /* height: 700px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+
+
+
+
+
 
 
 
