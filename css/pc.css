@@ -4,68 +4,55 @@
 
 /* ========== SHOWCASE DESCTOP VIEW ========== */
 @media screen and (min-width: 1024px) {
-    #showCase .showCaseWrap .showcaseBox h1 {
-        font-size: 2.8rem;
-    }
+  #showCase .showCaseWrap .showcaseBox h1 {
+    font-size: 2.8rem;
+  }
 
-    #showCase .showCaseWrap .showcaseBox img {
-        width: 500px;
-        height: auto;
-    }
+  #showCase .showCaseWrap .showcaseBox img {
+    width: 500px;
+    height: auto;
+  }
 
+  /* ========== INFO PAGE | DESCTOP VIEW ==========*/
 
+  /* ========== WHAT WE DO ==========*/
+  #infoWhat .container .infoWrapBox {
+    flex-direction: row;
+  }
 
+  /* ========== WHY US ========== */
+  #infoWhyUs .container .infoWhyUsWrap {
+    flex-direction: row;
+  }
 
+  /* ========== INFO PAGE | DESCTOP VIEW ==========*/
+  /* ========== MEET THE TEAM ==========*/
+  #team .container .teamWrap .teamMember {
+    width: 300px;
+  }
 
-    /* ========== INFO PAGE | TABLET VIEW ==========*/
+  #team .container .teamWrap .teamMember img {
+    height: 280px;
+  }
 
-    /* ========== WHAT WE DO ==========*/
-    #infoWhat .container .infoWrapBox {
-        flex-direction: row;
-    }
+  /* ========== ABOUT PAGE | DESCTOP | WHAT WE DO ========== */
+  #whatWeDo .container .whatWeWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
 
-     /* ========== WHY US ========== */
-     #infoWhyUs .container .infoWhyUsWrap {
-        flex-direction: row;
-    }
+  #whatWeDo .container .whatWeWrap .doBox {
+    flex: 1;
+  }
 
+  #team .container .teamWrap .teamMember img {
+    height: 300px;
+  }
 
-
-
-
-
-
-
-
-
-    
-
-    /* ========== ABOUT PAGE | DESCTOP | WHAT WE DO ========== */
-    #whatWeDo .container .whatWeWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    #whatWeDo .container .whatWeWrap .doBox {
-        flex: 1;
-    }
-
-    #team .container .teamWrap .teamMember img {
-        height: 300px;
-    }
-
-
-
-
-
-
-    /* ========== PRICING PAGE | DESCTOP | WHAT WE DO ========== */
-    .pricing-card{
-        width: 250px;
-    }
-
-    
-
+  /* ========== PRICING PAGE | DESCTOP | WHAT WE DO ========== */
+  .pricing-card {
+    width: 250px;
+  }
 }

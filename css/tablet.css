@@ -2,232 +2,207 @@
     TABLET VIEW
 =============================================== */
 @media screen and (min-width: 768px) {
+  /* ========== SHOWCASE TABLET VIEW ========== */
+  #showCase .showCaseWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 
-    /* ========== SHOWCASE TABLET VIEW ========== */
-    #showCase .showCaseWrap {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-    }
+  #showCase .showCaseWrap .showcaseBox {
+    flex: 1;
+  }
 
-    #showCase .showCaseWrap .showcaseBox {
-        flex: 1;
-    }
+  #showCase .showCaseWrap .showcaseBox h1 {
+    font-size: 2rem;
+  }
 
-    #showCase .showCaseWrap .showcaseBox h1 {
-        font-size: 2rem;
-    }
-
-    
-
-
-    /* ==============================================
+  /* ==============================================
         INFO PAGE | TABLET VIEW
     =============================================== */
-    
-    /* ========== PROJECT ==========*/
-    #infoProject .container .infoProjectWrap {
-        flex-direction: row-reverse;
-    }
 
-    #infoProject .container .infoProjectWrap .infoProjectBox1 {
-        flex: 1;
-    }
+  /* ========== PROJECT ==========*/
+  #infoProject .container .infoProjectWrap {
+    flex-direction: row-reverse;
+  }
 
-    #infoProject .container .infoProjectWrap .infoProjectBox2 {
-        flex: 2;
-    }
+  #infoProject .container .infoProjectWrap .infoProjectBox1 {
+    flex: 1;
+  }
 
+  #infoProject .container .infoProjectWrap .infoProjectBox2 {
+    flex: 2;
+  }
 
-    /* ========== PORTFOLIO ========== */
-    #infoPortfolio .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  /* ========== PORTFOLIO ========== */
+  #infoPortfolio .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #infoPortfolio .container .infoPortfolioBox1 {
-        flex: 1;
-    }
+  #infoPortfolio .container .infoPortfolioBox1 {
+    flex: 1;
+  }
 
-    #infoPortfolio .container .infoPortfolioBox2 {
-        flex: 2;
-    }
+  #infoPortfolio .container .infoPortfolioBox2 {
+    flex: 2;
+  }
 
+  /* ========== PRICING ========== */
+  #infoPricing .infoPricingWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 
+  #infoPricing .infoPricingWrap .pb-1 {
+    flex: 1;
+  }
 
-    /* ========== PRICING ========== */
-    #infoPricing .infoPricingWrap {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-    }
+  #infoPricing .infoPricingWrap .pb-2 {
+    flex: 2;
+  }
 
-    #infoPricing .infoPricingWrap .pb-1 {
-        flex: 1;
-    }
+  /* ========== TESTIMONIALS ========== */
+  #testimonials .testi {
+    flex-direction: row;
+  }
 
-    #infoPricing .infoPricingWrap .pb-2 {
-        flex: 2;
-    }
+  #testimonials .testi .testi-box {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #testimonials .testi-box .testi-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
+  /* ========== BLOG ========== */
+  #infoBlog .container .infoBlogWrap {
+    flex-direction: row;
+  }
 
-    /* ========== TESTIMONIALS ========== */
-    #testimonials .testi {
-        flex-direction: row;
-    }
+  /* ---------------------------------------------------------------------------------------------- */
 
-    #testimonials .testi .testi-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #testimonials .testi-box .testi-1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-
-    /* ========== BLOG ========== */
-    #infoBlog .container .infoBlogWrap {
-        flex-direction: row;
-    }
-
-
-    /* ---------------------------------------------------------------------------------------------- */
-
-
-     /* ==============================================
+  /* ==============================================
         ABOUT PAGE | TABLET
     =============================================== */
-    /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
-    #whatWeDo .container .whatWeWrap .doBox img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* ========== ABOU PAGE | TABLET | WHAT WE DO ========== */
+  #whatWeDo .container .whatWeWrap .doBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */
-    #team .container .teamWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-    }
+  /* ========== ABOUT PAGE | TABLET | MEET THE TEAM ========== */
+  #team .container .teamWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
 
-    #team .container .teamWrap .teamMember {
-        margin: 0 1rem;
-        flex: 1;
-    }
+  #team .container .teamWrap .teamMember {
+    width: 230px;
+  }
 
-    #team .container .teamWrap .teamMember img {
-        height: 220px;
-    }
+  #team .container .teamWrap .teamMember img {
+    height: 230px;
+  }
 
-
- /* ==============================================
+  /* ==============================================
        PRICING | TABLET
     =============================================== */
-    .pricing-table {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
+  .pricing-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-
-    /* ==============================================
+  /* ==============================================
        PORTFOLIO PAGE | TABLET
     =============================================== */
-    .portfolio-sites-wrap {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .portfolio-sites-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .portfolio-sites-wrap .portfolio-sites {
-        margin: 1rem;
-    }
+  .portfolio-sites-wrap .portfolio-sites {
+    margin: 1rem;
+  }
 
-
-    
-    /* ==============================================
+  /* ==============================================
         BLOG PAGE | TABLET
     =============================================== */
-    #blog .container .blogWrap {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  #blog .container .blogWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    #blog .container .blogWrap .blogBox {
-        max-width: 300px;
-    }
+  #blog .container .blogWrap .blogBox {
+    max-width: 300px;
+  }
 
-
-
-    /* ==============================================
+  /* ==============================================
         POST PAGE | TABLET-MODE
     =============================================== */
-    .post-flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  .post-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .post-flex .article {
-        flex: 3;
-        margin-left: 0.5rem;
-    }
+  .post-flex .article {
+    flex: 3;
+    margin-left: 0.5rem;
+  }
 
-    .post-flex .sidebar {
-        flex: 1;
-   
-    }
+  .post-flex .sidebar {
+    flex: 1;
+  }
 
-
-
-    /* ==============================================
+  /* ==============================================
         CONTACT ALL | TABLET VIEW
     =============================================== */
-    #contact .container .contactWrap {
-        display: flex;
-        flex-direction: row;
-    }
+  #contact .container .contactWrap {
+    display: flex;
+    flex-direction: row;
+  }
 
-    #contact .container p {
-        margin-bottom: 3rem;
-    }
+  #contact .container p {
+    margin-bottom: 3rem;
+  }
 
-    #contact .container .contactWrap .contactInfo {
-        flex: 1;
-    }
-    #contact .container .contactWrap .contactForm {
-        flex: 1;
-    }
+  #contact .container .contactWrap .contactInfo {
+    flex: 1;
+  }
+  #contact .container .contactWrap .contactForm {
+    flex: 1;
+  }
 
-
-
-    /* ==============================================
+  /* ==============================================
         FOOTER ALL TABLET VIEW
     =============================================== */
-    #footer .footerWrap {
-        flex-direction: row;
-    }
-    
-    #footer .footerWrap .footerBox {
-        border-right: 5px solid rgba(255, 255, 255, 0.01);
-    }
-    
-    #footer .footerWrap .footerBox {
-        border-bottom: none;
-    }
+  #footer .footerWrap {
+    flex-direction: row;
+  }
+
+  #footer .footerWrap .footerBox {
+    border-right: 5px solid rgba(255, 255, 255, 0.01);
+  }
+
+  #footer .footerWrap .footerBox {
+    border-bottom: none;
+  }
 }
